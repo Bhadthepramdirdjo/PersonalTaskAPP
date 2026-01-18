@@ -1,122 +1,126 @@
 # Personal Task App 📝
 
-A primitive yet beautiful, glassmorphism-styled Task Management Application built with **Laravel 10**, **Tailwind CSS**, and **Alpine.js**.
+Aplikasi Manajemen Tugas yang sederhana namun indah dengan gaya **glassmorphism**, dibangun menggunakan **Laravel 10**, **Tailwind CSS**, dan **Alpine.js**.
 
 ![Dashboard Preview](public/img/Logo_baru.svg)
-*(Note: Replace with an actual screenshot of your dashboard if available)*
+*(Catatan: Ganti dengan screenshot dashboard asli Anda jika tersedia)*
 
-## ✨ Key Features
+## ✨ Fitur Utama
 
-### 🎨 User Interface & Experience
--   **Glassmorphism Design**: Modern, translucent UI components with blur effects.
--   **Dark Mode Ready**: Fully responsive design that looks great in both light and dark themes.
--   **Responsive Layout**: Optimized for Desktop, Tablet, and Mobile devices.
--   **Custom Scrollbars**: Sleek, themed scrollbars for a polished look.
+### 🎨 Antarmuka & Pengalaman Pengguna (UI/UX)
+-   **Desain Glassmorphism**: Komponen UI modern yang transparan dengan efek blur.
+-   **Dark Mode Ready**: Tampilan responsif sepenuhnya yang terlihat bagus baik dalam tema terang maupun gelap.
+-   **Layout Responsif**: Dioptimalkan untuk perangkat Desktop, Tablet, dan Ponsel.
+-   **Scrollbar Kustom**: Scrollbar bertema gelap yang ramping untuk tampilan yang lebih rapi.
 
-### 🚀 Core Functionality
+### 🚀 Fungsi Utama
 -   **Dashboard**:
-    -   Real-time statistics (Pending, Completed, Total Tasks).
-    -   **Motivational Quotes**: Random quotes (Indonesian) to keep you inspired.
-    -   **Special Greetings**: Personalized welcome messages.
-    -   **Visual Charts**: Doughnut charts for category distribution and priority analysis.
--   **Task Management**:
-    -   Create, Read, Update, Delete (CRUD) tasks.
-    -   Categorize tasks (Work, Personal, etc.) with custom colors.
-    -   Set Priorities (Low, Medium, High, Urgent).
-    -   **Deadline Indicators**: Visual cues for overdue tasks (Red) and tasks due soon (Yellow).
--   **Category Management**: Manage custom categories to organize your workflow.
--   **Email Reminders**: Automated email notifications for tasks due in 2 or 3 days.
+    -   Statistik real-time (Tugas Tertunda, Selesai, Total Tugas).
+    -   **Kutipan Motivasi**: Kutipan acak (Bahasa Indonesia) untuk menjaga semangat Anda.
+    -   **Sapaan Spesial**: Pesan sambutan yang dipersonalisasi.
+    -   **Grafik Visual**: Diagram donat untuk distribusi kategori dan analisis prioritas.
+-   **Manajemen Tugas**:
+    -   Buat, Baca, Ubah, Hapus (CRUD) tugas.
+    -   Kategorikan tugas (Kerjaan, Pribadi, dll) dengan warna kustom.
+    -   Atur Prioritas (Rendah, Menengah, Tinggi, Mendesak).
+    -   **Indikator Deadline**: Penanda visual untuk tugas yang terlambat (Merah) dan tugas yang akan segera jatuh tempo (Kuning).
+-   **Manajemen Kategori**: Kelola kategori kustom untuk mengatur alur kerja Anda.
+-   **Pengingat Email**: Notifikasi email otomatis untuk tugas yang jatuh tempo dalam 2 atau 3 hari.
 
-### ⚙️ Settings & Personalization
--   **Multi-Language Support**: Switch between **English** and **Bahasa Indonesia** seamlessly.
--   **Profile Management**: Update your name, email, and upload a **Profile Photo**.
--   **Authentication**:
-    -   Secure Login & Registration.
-    -   **Forgot Password** flow with a "Back to Login" option.
-    -   Username-based login support.
+### ⚙️ Pengaturan & Personalisasi
+-   **Dukungan Multi-Bahasa**: Beralih antara **Bahasa Inggris** dan **Bahasa Indonesia** dengan mudah.
+-   **Manajemen Profil**: Perbarui nama, email, dan unggah **Foto Profil**.
+-   **Otentikasi**:
+    -   Login & Registrasi yang aman.
+    -   Alur **Lupa Password** dengan opsi "Kembali ke Login".
+    -   Dukungan login menggunakan Username.
 
-## 🛠️ Tech Stack
+## 🛠️ Teknologi yang Digunakan
 
 -   **Framework**: [Laravel 10](https://laravel.com/) (PHP)
 -   **Frontend**: [Blade Templates](https://laravel.com/docs/blade)
 -   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
--   **Interactivity**: [Alpine.js](https://alpinejs.dev/)
+-   **Interaktivitas**: [Alpine.js](https://alpinejs.dev/)
 -   **Database**: MySQL
 
-## 🚀 Installation & Setup
+## 🚀 Instalasi & Pengaturan
 
-Follow these steps to run the project locally:
+Ikuti langkah-langkah ini untuk menjalankan proyek secara lokal:
 
-1.  **Clone the Repository**
+1.  **Clone Repository**
     ```bash
     git clone https://github.com/Bhadthepramdirdjo/PersonalTaskAPP.git
     cd PersonalTaskAPP
     ```
 
-2.  **Install PHP Dependencies**
+2.  **Install Dependensi PHP**
     ```bash
     composer install
     ```
 
-3.  **Install Frontend Dependencies**
+3.  **Install Dependensi Frontend**
     ```bash
     npm install
     ```
 
-4.  **Environment Configuration**
-    -   Copy the example environment file:
+4.  **Konfigurasi Environment**
+    -   Salin file contoh environment:
         ```bash
         cp .env.example .env
         ```
-    -   Update the database settings in `.env` (DB_DATABASE, DB_USERNAME, etc.).
-    -   Update mail settings if you want to test email reminders (MAIL_MAILER, MAIL_HOST, etc.).
+    -   Perbarui pengaturan database di `.env` (DB_DATABASE, DB_USERNAME, dll).
+    -   Perbarui pengaturan email jika Anda ingin menguji pengingat email (MAIL_MAILER, MAIL_HOST, dll).
 
 5.  **Generate Application Key**
     ```bash
     php artisan key:generate
     ```
 
-6.  **Run Migrations & Seeders**
-    This will set up the database tables and default data (priorities, user settings).
+6.  **Jalankan Migrasi & Seeder**
+    Ini akan menyiapkan tabel database dan data default (prioritas, pengaturan pengguna).
     ```bash
     php artisan migrate --seed
     ```
 
-7.  **Build Assets**
+7.  **Build Aset**
     ```bash
     npm run build
     ```
 
-8.  **Run the Application**
+8.  **Jalankan Aplikasi**
     ```bash
     php artisan serve
     ```
-    Access the app at `http://localhost:8000`.
+    Akses aplikasi di `http://localhost:8000`.
 
-## 📖 Usage Guide
+## 📖 Panduan Penggunaan
 
-1.  **Registration**:
-    -   Create a new account on the `/register` page.
+1.  **Registrasi**:
+    -   Buat akun baru di halaman `/register`.
 2.  **Dashboard**:
-    -   After login, you will see your dashboard with task summaries and a motivational quote.
-3.  **Managing Tasks**:
-    -   Go to **My Tasks** to view list of tasks.
-    -   Click **New Task** to add a todo item. Select category, priority, and deadline.
-    -   Mark tasks as completed by clicking the checkbox or status icon.
-    -   Completed tasks older than 7 days are automatically cleaned up.
-4.  **Categories**:
-    -   Go to **Categories** to create or delete task categories (e.g., "Office", "Hobby").
-5.  **Settings**:
-    -   Click the **Profile** dropdown or **Settings** in sidebar.
-    -   Change the **Language** (English/Indonesian) under "Application Preferences".
+    -   Setelah login, Anda akan melihat dashboard dengan ringkasan tugas dan kutipan motivasi.
+3.  **Mengelola Tugas**:
+    -   Pergi ke **My Tasks** untuk melihat daftar tugas.
+    -   Klik **New Task** untuk menambahkan item to-do. Pilih kategori, prioritas, dan tenggat waktu.
+    -   Tandai tugas sebagai selesai dengan mengklik kotak centang atau ikon status.
+    -   Tugas yang sudah selesai lebih dari 7 hari akan dibersihkan secara otomatis.
+4.  **Kategori**:
+    -   Pergi ke **Categories** untuk membuat atau menghapus kategori tugas (misalnya: "Kantor", "Hobi").
+5.  **Pengaturan**:
+    -   Klik dropdown **Profil** atau **Settings** di sidebar.
+    -   Ubah **Bahasa** (Inggris/Indonesia) di bawah "Application Preferences".
 
-## 🤝 Contributing
+## ❓ Alasan Pembuatan
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+> "Awalnya dibuat untuk mempermudah menyusun tugas-tugas yang banyak, agar lebih tercatat rapi. Fitur pengingat ditambahkan untuk membantu mengingatkan agar tidak lupa deadline penting."
 
-## 📄 License
+## 🤝 Kontribusi
 
-This project is open-source and available under the [MIT license](https://opensource.org/licenses/MIT).
+Kontribusi sangat diterima! Silakan fork repository ini dan kirimkan pull request.
+
+## 📄 Lisensi
+
+Proyek ini adalah open-source dan tersedia di bawah [lisensi MIT](https://opensource.org/licenses/MIT).
 
 ---
-*Created by Bhadriko Theo Pramudya Djojosoedirdjo - 2026*
+*Dibuat oleh Bhadriko Theo Pramudya Djojosoedirdjo - 2026*

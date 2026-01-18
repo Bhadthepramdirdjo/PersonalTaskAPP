@@ -1,59 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Personal Task App 📝
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A primitive yet beautiful, glassmorphism-styled Task Management Application built with **Laravel 10**, **Tailwind CSS**, and **Alpine.js**.
 
-## About Laravel
+![Dashboard Preview](public/img/Logo_baru.svg)
+*(Note: Replace with an actual screenshot of your dashboard if available)*
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Key Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🎨 User Interface & Experience
+-   **Glassmorphism Design**: Modern, translucent UI components with blur effects.
+-   **Dark Mode Ready**: Fully responsive design that looks great in both light and dark themes.
+-   **Responsive Layout**: Optimized for Desktop, Tablet, and Mobile devices.
+-   **Custom Scrollbars**: Sleek, themed scrollbars for a polished look.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🚀 Core Functionality
+-   **Dashboard**:
+    -   Real-time statistics (Pending, Completed, Total Tasks).
+    -   **Motivational Quotes**: Random quotes (Indonesian) to keep you inspired.
+    -   **Special Greetings**: Personalized welcome messages.
+    -   **Visual Charts**: Doughnut charts for category distribution and priority analysis.
+-   **Task Management**:
+    -   Create, Read, Update, Delete (CRUD) tasks.
+    -   Categorize tasks (Work, Personal, etc.) with custom colors.
+    -   Set Priorities (Low, Medium, High, Urgent).
+    -   **Deadline Indicators**: Visual cues for overdue tasks (Red) and tasks due soon (Yellow).
+-   **Category Management**: Manage custom categories to organize your workflow.
+-   **Email Reminders**: Automated email notifications for tasks due in 2 or 3 days.
 
-## Learning Laravel
+### ⚙️ Settings & Personalization
+-   **Multi-Language Support**: Switch between **English** and **Bahasa Indonesia** seamlessly.
+-   **Profile Management**: Update your name, email, and upload a **Profile Photo**.
+-   **Authentication**:
+    -   Secure Login & Registration.
+    -   **Forgot Password** flow with a "Back to Login" option.
+    -   Username-based login support.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🛠️ Tech Stack
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **Framework**: [Laravel 10](https://laravel.com/) (PHP)
+-   **Frontend**: [Blade Templates](https://laravel.com/docs/blade)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Interactivity**: [Alpine.js](https://alpinejs.dev/)
+-   **Database**: MySQL
 
-## Laravel Sponsors
+## 🚀 Installation & Setup
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Follow these steps to run the project locally:
 
-### Premium Partners
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/Bhadthepramdirdjo/PersonalTaskAPP.git
+    cd PersonalTaskAPP
+    ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+2.  **Install PHP Dependencies**
+    ```bash
+    composer install
+    ```
 
-## Contributing
+3.  **Install Frontend Dependencies**
+    ```bash
+    npm install
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+4.  **Environment Configuration**
+    -   Copy the example environment file:
+        ```bash
+        cp .env.example .env
+        ```
+    -   Update the database settings in `.env` (DB_DATABASE, DB_USERNAME, etc.).
+    -   Update mail settings if you want to test email reminders (MAIL_MAILER, MAIL_HOST, etc.).
 
-## Code of Conduct
+5.  **Generate Application Key**
+    ```bash
+    php artisan key:generate
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+6.  **Run Migrations & Seeders**
+    This will set up the database tables and default data (priorities, user settings).
+    ```bash
+    php artisan migrate --seed
+    ```
 
-## Security Vulnerabilities
+7.  **Build Assets**
+    ```bash
+    npm run build
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+8.  **Run the Application**
+    ```bash
+    php artisan serve
+    ```
+    Access the app at `http://localhost:8000`.
 
-## License
+## 📖 Usage Guide
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1.  **Registration**:
+    -   Create a new account on the `/register` page.
+2.  **Dashboard**:
+    -   After login, you will see your dashboard with task summaries and a motivational quote.
+3.  **Managing Tasks**:
+    -   Go to **My Tasks** to view list of tasks.
+    -   Click **New Task** to add a todo item. Select category, priority, and deadline.
+    -   Mark tasks as completed by clicking the checkbox or status icon.
+    -   Completed tasks older than 7 days are automatically cleaned up.
+4.  **Categories**:
+    -   Go to **Categories** to create or delete task categories (e.g., "Office", "Hobby").
+5.  **Settings**:
+    -   Click the **Profile** dropdown or **Settings** in sidebar.
+    -   Change the **Language** (English/Indonesian) under "Application Preferences".
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+*Created by Bhadriko Theo Pramudya Djojosoedirdjo - 2026*

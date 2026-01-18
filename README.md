@@ -115,7 +115,8 @@ Ikuti langkah-langkah ini untuk menjalankan proyek secara lokal:
 
 ## 🤝 Kontribusi
 
-Kontribusi sangat diterima! Silakan fork repository ini dan kirimkan pull request.
+Proyek ini adalah **Proyek Pribadi** dan saat ini **TIDAK** menerima kontribusi dari luar (tidak menerima Pull Request).
+Namun, Anda bebas untuk melakukan *fork* repository ini untuk pembelajaran atau penggunaan pribadi sesuai dengan lisensi yang berlaku.
 
 ## 📄 Lisensi
 

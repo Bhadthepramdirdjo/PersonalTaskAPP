@@ -3,7 +3,6 @@
 Aplikasi Manajemen Tugas yang sederhana namun indah dengan gaya **glassmorphism**, dibangun menggunakan **Laravel 10**, **Tailwind CSS**, dan **Alpine.js**.
 
 ![Dashboard Preview](public/img/Logo_baru.svg)
-*(Catatan: Ganti dengan screenshot dashboard asli Anda jika tersedia)*
 
 ## ✨ Fitur Utama
 
